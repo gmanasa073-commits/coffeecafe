@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Take Away | MANASA CAFE - Quick Coastal Pickup</title>
+    <meta name="description" content="Order fresh artisan coffees, bakery boxes, and gourmet meals for quick coastal pickup from MANASA CAFE.">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/924/924514.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="top-bar-item"><span class="status-dot"></span> Take Away Counter Ready: Average prep time 10-15 mins</span>
+                <span class="top-bar-item"><i class="fa-solid fa-location-dot"></i> Promenade Curbside & Counter Pickup</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-bar-item"><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                    <div class="logo-text">
+                        <span class="logo-title">MANASA CAFE</span>
+                        <span class="logo-tag">Beachside Roastery</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="takeaway.html" class="nav-link active">Take Away</a></li>
+                    <li class="nav-item"><a href="reservation.html" class="nav-link">Reservations</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="takeaway.html" class="cart-icon-btn" title="View Take Away Cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-count-badge" id="navCartCount">0</span>
+                    </a>
+                    <a href="reservation.html" class="btn btn-primary btn-sm">Book Table</a>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header Hero -->
+    <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1920');">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <span class="page-hero-subtitle">Freshly Brewed & Packed</span>
+            <h1 class="page-hero-title">Online Take Away Ordering</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+                <span>Take Away</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Take Away Interactive Interface -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="takeaway-layout">
+
+                <!-- Left Column: Menu Items to Add -->
+                <div class="takeaway-categories">
+
+                    <!-- Specialty Coffees -->
+                    <div class="takeaway-section">
+                        <div class="takeaway-cat-header">
+                            <i class="fa-solid fa-mug-hot"></i>
+                            <h3>Specialty Hot & Cold Brews</h3>
+                        </div>
+                        <div class="takeaway-items-grid">
+                            
+                            <!-- Item 1 -->
+                            <div class="takeaway-item-card">
+                                <div class="takeaway-item-top">
+                                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=300&auto=format&fit=crop" alt="Caramel Latte" class="takeaway-item-thumb">
+                                    <div class="takeaway-item-info">
+                                        <h4>Golden Caramel Latte</h4>
+                                        <p>Double espresso, salted caramel, velvet microfoam.</p>
+                                        <div class="takeaway-item-price">₹280</div>
+                                    </div>
+                                </div>
+                                <div class="takeaway-action-row">
+                                    <span style="font-size: 0.8rem; color: var(--color-gold-light);">Hot / 350ml</span>
+                                    <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="101" data-name="Coastal Golden Caramel Latte" data-price="280" data-img="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=300&auto=format&fit=crop">
+                                        <i class="fa-solid fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="takeaway-item-card">
+                                <div class="takeaway-item-top">
+                                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=300&auto=format&fit=crop" alt="Cold Brew" class="takeaway-item-thumb">
+                                    <div class="takeaway-item-info">
+                                        <h4>Sunset Cold Brew Tonic</h4>
+                                        <p>18h Ethiopian slow steeped with blood orange.</p>
+                                        <div class="takeaway-item-price">₹260</div>
+                                    </div>
+                                </div>
+                                <div class="takeaway-action-row">
+                                    <span style="font-size: 0.8rem; color: var(--color-gold-light);">Iced / 400ml</span>
+                                    <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="102" data-name="Sunset Cold Brew Tonic" data-price="260" data-img="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=300&auto=format&fit=crop">
+                                        <i class="fa-solid fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="takeaway-item-card">
+                                <div class="takeaway-item-top">
+                                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=300&auto=format&fit=crop" alt="Cappuccino" class="takeaway-item-thumb">
+                                    <div class="takeaway-item-info">
+                                        <h4>Signature Cappuccino</h4>
+                                        <p>Silky Arabica microfoam dusted with cocoa.</p>
+                                        <div class="takeaway-item-price">₹230</div>
+                                    </div>
+                                </div>
+                                <div class="takeaway-action-row">
+                                    <span style="font-size: 0.8rem; color: var(--color-gold-light);">Hot / 300ml</span>
+                                    <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="108" data-name="Manasa Signature Cappuccino" data-price="230" data-img="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=300&auto=format&fit=crop">
+                                        <i class="fa-solid fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="takeaway-item-card">
+                                <div class="takeaway-item-top">
+                                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=300&auto=format&fit=crop" alt="Saffron Chai" class="takeaway-item-thumb">
+                                    <div class="takeaway-item-info">
+                                        <h4>Royal Saffron Chai</h4>
+                                        <p>Cardamom, Kashmiri saffron, rich creamy brew.</p>
+                                        <div class="takeaway-item-price">₹220</div>
+                                    </div>
+                                </div>
+                                <div class="takeaway-action-row">
+                                    <span style="font-size: 0.8rem; color: var(--color-gold-light);">Hot / 350ml</span>
+                                    <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="106" data-name="Royal Saffron Rose Chai" data-price="220" data-img="https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=300&auto=format&fit=crop">
+                                        <i class="fa-solid fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Savory Snacks & Sandwiches -->
+                    <div class="takeaway-section">
+                        <div class="takeaway-cat-header">
+                            <i class="fa-solid fa-burger"></i>
+                            <h3>Gourmet Sandwiches & Savories</h3>
+                        </div>
+                        <div class="takeaway-items-grid">
+                            
+                            <!-- Item 5 -->
+                            <div class="takeaway-item-card">
+                                <div class="takeaway-item-top">
+                                    <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=300&auto=format&fit=crop" alt="Chicken Panini" class="takeaway-item-thumb">
+                                    <div class="takeaway-item-info">
+                                        <h4>Smoked Chicken Panini</h4>
+                                        <p>Herb chicken, aged cheddar, chimichurri ciabatta.</p>
+                                        <div class="takeaway-item-price">₹360</div>
+                                    </div>
+                                </div>
+                                <div class="takeaway-action-row">
+                                    <span style="font-size: 0.8rem; color: var(--color-gold-light);">Chef Special</span>
+                                    <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="105" data-name="Smoked Paprika Chicken Panini" data-price="360" data-img="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=300&auto=format&fit=crop">
+                                        <i class="fa-solid fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Item 6 -->
+                            <div class="takeaway-item-card">
+                                <div class="takeaway-item-top">
+                                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=300&auto=format&fit=crop" alt="Avocado Toast" class="takeaway-item-thumb">
+                                    <div class="takeaway-item-info">
+                                        <h4>Avocado Sourdough Tartine</h4>
+                                        <p>Hass avocado, sun-dried tomato, feta on sourdough.</p>
+                                        <div class="takeaway-item-price">₹340</div>
+                                    </div>
+                                </div>
+                                <div class="takeaway-action-row">
+                                    <span style="font-size: 0.8rem; color: var(--color-gold-light);">Vegetarian</span>
+                                    <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="103" data-name="Avocado Sourdough Tartine" data-price="340" data-img="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=300&auto=format&fit=crop">
+                                        <i class="fa-solid fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Decadent Bakery & Desserts -->
+                    <div class="takeaway-section">
+                        <div class="takeaway-cat-header">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <h3>Bakery & Desserts Box</h3>
+                        </div>
+                        <div class="takeaway-items-grid">
+                            
+                            <!-- Item 7 -->
+                            <div class="takeaway-item-card">
+                                <div class="takeaway-item-top">
+                                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=300&auto=format&fit=crop" alt="Chocolate Torte" class="takeaway-item-thumb">
+                                    <div class="takeaway-item-info">
+                                        <h4>Belgian Chocolate Torte</h4>
+                                        <p>70% dark Belgian cocoa ganache with gold leaf.</p>
+                                        <div class="takeaway-item-price">₹310</div>
+                                    </div>
+                                </div>
+                                <div class="takeaway-action-row">
+                                    <span style="font-size: 0.8rem; color: var(--color-gold-light);">Decadent</span>
+                                    <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="104" data-name="Belgian Truffle Chocolate Torte" data-price="310" data-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=300&auto=format&fit=crop">
+                                        <i class="fa-solid fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+
+                            <!-- Item 8 -->
+                            <div class="takeaway-item-card">
+                                <div class="takeaway-item-top">
+                                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=300&auto=format&fit=crop" alt="Pistachio Croissant" class="takeaway-item-thumb">
+                                    <div class="takeaway-item-info">
+                                        <h4>Pistachio Cream Croissant</h4>
+                                        <p>Laminated French butter pastry, pistachio frangipane.</p>
+                                        <div class="takeaway-item-price">₹240</div>
+                                    </div>
+                                </div>
+                                <div class="takeaway-action-row">
+                                    <span style="font-size: 0.8rem; color: var(--color-gold-light);">Flaky</span>
+                                    <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="111" data-name="Pistachio Cream Croissant" data-price="240" data-img="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=300&auto=format&fit=crop">
+                                        <i class="fa-solid fa-plus"></i> Add
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Interactive Order Summary -->
+                <div class="order-summary-sidebar">
+                    <div class="order-summary-header">
+                        <h3><i class="fa-solid fa-receipt text-gold"></i> Order Summary</h3>
+                        <button id="clearCartBtn" style="background: none; border: none; color: #E57373; cursor: pointer; font-size: 0.82rem;" title="Empty Cart">
+                            <i class="fa-solid fa-trash"></i> Clear
+                        </button>
+                    </div>
+
+                    <!-- Cart Item Rows Container -->
+                    <div class="cart-items-list" id="cartItemsList">
+                        <div class="cart-empty-message">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                            Your take away basket is empty.<br>Add delicious items to begin!
+                        </div>
+                    </div>
+
+                    <!-- Computation Details -->
+                    <div class="order-calculation-rows">
+                        <div class="calc-row">
+                            <span>Subtotal:</span>
+                            <span id="cartSubtotal">₹0</span>
+                        </div>
+                        <div class="calc-row">
+                            <span>GST (5%):</span>
+                            <span id="cartTax">₹0</span>
+                        </div>
+                        <div class="calc-row">
+                            <span>Eco-Friendly Box:</span>
+                            <span id="cartPackaging">₹20</span>
+                        </div>
+                        <div class="calc-row total-row">
+                            <span>Grand Total:</span>
+                            <span id="cartGrandTotal">₹0</span>
+                        </div>
+                    </div>
+
+                    <!-- Pickup Details Form -->
+                    <form id="takeawayOrderForm" onsubmit="handleTakeawayCheckout(event)">
+                        <div class="form-group" style="margin-bottom: 0.8rem;">
+                            <label for="takeawayName">Your Name *</label>
+                            <input type="text" id="takeawayName" class="form-control" placeholder="e.g. Aryan Sharma" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0.8rem;">
+                            <label for="takeawayPhone">Phone Number *</label>
+                            <input type="tel" id="takeawayPhone" class="form-control" placeholder="e.g. 9876543210" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 0.8rem;">
+                            <label for="takeawayTime">Pickup Time *</label>
+                            <select id="takeawayTime" class="form-control" required>
+                                <option value="">Select Pickup Time</option>
+                                <option value="In 15 Minutes">In 15 Minutes (Express)</option>
+                                <option value="In 30 Minutes">In 30 Minutes</option>
+                                <option value="In 45 Minutes">In 45 Minutes</option>
+                                <option value="In 1 Hour">In 1 Hour</option>
+                                <option value="Sunset Time (6:00 PM)">Sunset Time (6:00 PM)</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1.2rem;">
+                            <label for="takeawayNotes">Special Instructions (Optional)</label>
+                            <input type="text" id="takeawayNotes" class="form-control" placeholder="e.g. Oat milk, less ice, extra napkins">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" id="placeOrderBtn" disabled>
+                            <i class="fa-solid fa-check-circle"></i> Place Take Away Order
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Confirmation Modal -->
+    <div class="modal-overlay" id="orderConfirmModal">
+        <div class="modal-box">
+            <button class="modal-close-btn" onclick="closeOrderModal()">&times;</button>
+            <div class="modal-icon-badge">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 style="font-size: 1.8rem; color: var(--color-gold-light); margin-bottom: 0.5rem;">Order Confirmed!</h3>
+            <p style="color: var(--color-beige); font-size: 0.95rem;">
+                Thank you, <strong id="modalCustomerName" class="text-gold"></strong>! Your take-away order is being freshly prepared by our coastal baristas.
+            </p>
+
+            <div class="receipt-box" id="modalReceiptDetails">
+                <!-- Receipt content populated by script.js -->
+            </div>
+
+            <p style="font-size: 0.85rem; color: var(--color-text-light-muted); margin-bottom: 1.5rem;">
+                <i class="fa-solid fa-location-dot text-gold"></i> Pick up at: <strong>MANASA CAFE Promenade Counter</strong>
+            </p>
+
+            <button class="btn btn-primary" onclick="closeOrderModal()" style="width: 100%;">
+                <i class="fa-solid fa-mug-hot"></i> Done & Return
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                        <div class="logo-text">
+                            <span class="logo-title">MANASA CAFE</span>
+                            <span class="logo-tag">Beachside Roastery</span>
+                        </div>
+                    </a>
+                    <p>A premier open-air coastal cafe celebrating single-origin coffees, handcrafted confectionery, and peaceful sunset ocean vistas.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://tripadvisor.com" target="_blank" class="social-icon-btn"><i class="fa-solid fa-plane"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> Our Story</a></li>
+                        <li><a href="menu.html"><i class="fa-solid fa-angle-right"></i> Gourmet Menu</a></li>
+                        <li><a href="takeaway.html"><i class="fa-solid fa-angle-right"></i> Online Take Away</a></li>
+                        <li><a href="reservation.html"><i class="fa-solid fa-angle-right"></i> Book a Table</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Cafe Hours</h4>
+                    <ul class="footer-hours-list">
+                        <li><span class="day">Mon – Thu:</span> <span>7:00 AM – 11:00 PM</span></li>
+                        <li><span class="day">Fri – Sat:</span> <span>7:00 AM – 12:00 AM</span></li>
+                        <li><span class="day">Sunday:</span> <span>6:30 AM – 11:30 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Helpline</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 0.8rem;">Need to modify your order or curbside pickup?</p>
+                    <p style="font-size: 0.95rem; font-weight: 600; color: var(--color-gold);"><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 MANASA CAFE. All Rights Reserved.</p>
+                <p>Designed for Luxury Coastal Hospitality • BTech CSE Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>

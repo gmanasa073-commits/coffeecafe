@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | MANASA CAFE - Visual Beachside Memories</title>
+    <meta name="description" content="View beautiful captures of MANASA CAFE - sunset beachside views, master barista art, outdoor cabanas, and delicious cuisine.">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/924/924514.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="top-bar-item"><span class="status-dot"></span> Open Today: 7:00 AM – 11:00 PM</span>
+                <span class="top-bar-item"><i class="fa-solid fa-location-dot"></i> Sunset Promenade Beach Road</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-bar-item"><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                    <div class="logo-text">
+                        <span class="logo-title">MANASA CAFE</span>
+                        <span class="logo-tag">Beachside Roastery</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li class="nav-item"><a href="takeaway.html" class="nav-link">Take Away</a></li>
+                    <li class="nav-item"><a href="reservation.html" class="nav-link">Reservations</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="takeaway.html" class="cart-icon-btn" title="View Take Away Cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-count-badge" id="navCartCount">0</span>
+                    </a>
+                    <a href="reservation.html" class="btn btn-primary btn-sm">Book Table</a>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header Hero -->
+    <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1920');">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <span class="page-hero-subtitle">Moments in Paradise</span>
+            <h1 class="page-hero-title">Visual Gallery</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+                <span>Gallery</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Filter and Lightbox -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Captured Memories</span>
+                <h2 class="section-title">The Essence of Manasa Cafe</h2>
+                <p class="section-desc">Click any image to view in high definition. Explore our coastal ambiance, specialty coffees, and beachfront dining.</p>
+            </div>
+
+            <!-- Gallery Filter Buttons -->
+            <div class="menu-filter-bar">
+                <button class="filter-btn active" data-gallery-filter="all">All Photos</button>
+                <button class="filter-btn" data-gallery-filter="beach">Beach & Sunset</button>
+                <button class="filter-btn" data-gallery-filter="coffee">Coffee & Barista</button>
+                <button class="filter-btn" data-gallery-filter="food">Food & Pastries</button>
+                <button class="filter-btn" data-gallery-filter="ambiance">Night & Ambiance</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+
+                <!-- Photo 1 -->
+                <div class="gallery-item" data-category="beach" onclick="openLightbox('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1400', 'Sunset Horizon from our Beach Deck')">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600&auto=format&fit=crop" alt="Beach Sunset">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Golden Hour Horizon</h4>
+                        <p>Beach & Sunset</p>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="gallery-item" data-category="coffee" onclick="openLightbox('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1400', 'Artisanal Latte Art Pour')">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600&auto=format&fit=crop" alt="Coffee Pour">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Barista Mastery</h4>
+                        <p>Coffee & Barista</p>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="gallery-item" data-category="ambiance" onclick="openLightbox('https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=1400', 'Fairy Lit Garden Cabanas at Twilight')">
+                    <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=600&auto=format&fit=crop" alt="Fairy Light Seating">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Twilight Glow</h4>
+                        <p>Night & Ambiance</p>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="gallery-item" data-category="food" onclick="openLightbox('https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1400', 'Belgian Truffle Chocolate Torte')">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop" alt="Chocolate Torte">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Decadent Torte</h4>
+                        <p>Food & Pastries</p>
+                    </div>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="gallery-item" data-category="coffee" onclick="openLightbox('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1400', 'Freshly Roasted Arabica Beans')">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=600&auto=format&fit=crop" alt="Coffee Beans">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Single Origin Roast</h4>
+                        <p>Coffee & Barista</p>
+                    </div>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="gallery-item" data-category="beach" onclick="openLightbox('https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=1400', 'Open-Air Seating with Ocean Waves')">
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?q=80&w=600&auto=format&fit=crop" alt="Beachfront Tables">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Seaside Tables</h4>
+                        <p>Beach & Sunset</p>
+                    </div>
+                </div>
+
+                <!-- Photo 7 -->
+                <div class="gallery-item" data-category="food" onclick="openLightbox('https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1400', 'Freshly Baked Butter Croissants')">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" alt="Croissant">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Morning Pastries</h4>
+                        <p>Food & Pastries</p>
+                    </div>
+                </div>
+
+                <!-- Photo 8 -->
+                <div class="gallery-item" data-category="ambiance" onclick="openLightbox('https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1400', 'Cozy Coastal Bohemian Cafe Interior')">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=600&auto=format&fit=crop" alt="Boho Cafe Interior">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Bohemian Lounge</h4>
+                        <p>Night & Ambiance</p>
+                    </div>
+                </div>
+
+                <!-- Photo 9 -->
+                <div class="gallery-item" data-category="food" onclick="openLightbox('https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=1400', 'Avocado Sourdough Tartine with Micro-Greens')">
+                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=600&auto=format&fit=crop" alt="Avocado Toast">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Artisan Tartine</h4>
+                        <p>Food & Pastries</p>
+                    </div>
+                </div>
+
+                <!-- Photo 10 -->
+                <div class="gallery-item" data-category="beach" onclick="openLightbox('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1400', 'Romantic Sunset Candlelight Dinner Table')">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=600&auto=format&fit=crop" alt="Candlelight Dinner">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Sunset Candlelight</h4>
+                        <p>Beach & Sunset</p>
+                    </div>
+                </div>
+
+                <!-- Photo 11 -->
+                <div class="gallery-item" data-category="coffee" onclick="openLightbox('https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=1400', 'Sparkling Cold Brew Tonic with Citrus')">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=600&auto=format&fit=crop" alt="Cold Brew Glass">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Cold Brew Perfection</h4>
+                        <p>Coffee & Barista</p>
+                    </div>
+                </div>
+
+                <!-- Photo 12 -->
+                <div class="gallery-item" data-category="ambiance" onclick="openLightbox('https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1400', 'Live Acoustic Music by the Ocean')">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=600&auto=format&fit=crop" alt="Acoustic Music">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Sunset Acoustic</h4>
+                        <p>Night & Ambiance</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Successful Staff Team Section -->
+    <section class="section-padding staff-section" id="staff-team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Meet the passionate and dedicated team behind the Manasa Cafe experience.</span>
+                <h2 class="section-title">Successful Staff Team</h2>
+                <p class="section-desc">Together, we create great coffee, delicious moments, and memorable experiences.</p>
+            </div>
+
+            <!-- Staff Cards Grid (4 per row on Desktop, 2 on Tablet, 1 on Mobile) -->
+            <div class="staff-grid">
+
+                <!-- Staff 1: CEO & Founder -->
+                <div class="staff-card">
+                    <div class="staff-img-wrapper" onclick="openLightbox('staff-ceo.jpg', 'Manasa — CEO & Founder')">
+                        <img src="staff-ceo.jpg" alt="Manasa - CEO & Founder" class="staff-img">
+                        <div class="staff-img-overlay"></div>
+                        <div class="staff-view-btn" title="View Photo">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="staff-card-body">
+                        <span class="staff-position-badge">
+                            <i class="fa-solid fa-crown text-gold"></i> CEO &amp; Founder
+                        </span>
+                        <h3 class="staff-name">Manasa</h3>
+                        <p class="staff-desc">Founder and visionary leader guiding the warm coastal hospitality and signature coffee craft.</p>
+                    </div>
+                </div>
+
+                <!-- Staff 2: Cafe Manager -->
+                <div class="staff-card">
+                    <div class="staff-img-wrapper" onclick="openLightbox('staff-manager.jpg', 'Archana — Cafe Manager')">
+                        <img src="staff-manager.jpg" alt="Archana - Cafe Manager" class="staff-img">
+                        <div class="staff-img-overlay"></div>
+                        <div class="staff-view-btn" title="View Photo">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="staff-card-body">
+                        <span class="staff-position-badge">
+                            <i class="fa-solid fa-user-tie text-gold"></i> Cafe Manager
+                        </span>
+                        <h3 class="staff-name">Archana</h3>
+                        <p class="staff-desc">Overseeing daily operations, customer delight, and ensuring every guest feels welcomed.</p>
+                    </div>
+                </div>
+
+                <!-- Staff 3: Head Chef -->
+                <div class="staff-card">
+                    <div class="staff-img-wrapper" onclick="openLightbox('staff-chef.jpg', 'Head Chef — Culinary & Pastry Specialist')">
+                        <img src="staff-chef.jpg" alt="Head Chef - Culinary & Pastry Specialist" class="staff-img">
+                        <div class="staff-img-overlay"></div>
+                        <div class="staff-view-btn" title="View Photo">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="staff-card-body">
+                        <span class="staff-position-badge">
+                            <i class="fa-solid fa-utensils text-gold"></i> Head Chef
+                        </span>
+                        <h3 class="staff-name">Chef Pooja</h3>
+                        <p class="staff-desc">Crafting artisanal pastries, gourmet sandwiches, and mouthwatering coastal culinary specials.</p>
+                    </div>
+                </div>
+
+                <!-- Staff 4: Head Barista & Service Team -->
+                <div class="staff-card">
+                    <div class="staff-img-wrapper" onclick="openLightbox('staff-team.jpg', 'Management & Barista Leadership Team')">
+                        <img src="staff-team.jpg" alt="Management & Barista Team" class="staff-img">
+                        <div class="staff-img-overlay"></div>
+                        <div class="staff-view-btn" title="View Photo">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                    </div>
+                    <div class="staff-card-body">
+                        <span class="staff-position-badge">
+                            <i class="fa-solid fa-mug-hot text-gold"></i> Head Barista &amp; Team
+                        </span>
+                        <h3 class="staff-name">Barista &amp; Service Team</h3>
+                        <p class="staff-desc">Mastering single-origin manual pour-overs, delicate latte art, and cheerful seaside service.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-container">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <button class="lightbox-nav lightbox-prev" onclick="prevLightboxImg()"><i class="fa-solid fa-chevron-left"></i></button>
+            <img src="" alt="Enlarged View" class="lightbox-img" id="lightboxImg">
+            <button class="lightbox-nav lightbox-next" onclick="nextLightboxImg()"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                        <div class="logo-text">
+                            <span class="logo-title">MANASA CAFE</span>
+                            <span class="logo-tag">Beachside Roastery</span>
+                        </div>
+                    </a>
+                    <p>A premier open-air coastal cafe celebrating single-origin coffees, handcrafted confectionery, and peaceful sunset ocean vistas.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://tripadvisor.com" target="_blank" class="social-icon-btn"><i class="fa-solid fa-plane"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> Our Story</a></li>
+                        <li><a href="menu.html"><i class="fa-solid fa-angle-right"></i> Gourmet Menu</a></li>
+                        <li><a href="takeaway.html"><i class="fa-solid fa-angle-right"></i> Online Take Away</a></li>
+                        <li><a href="reservation.html"><i class="fa-solid fa-angle-right"></i> Book a Table</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Cafe Hours</h4>
+                    <ul class="footer-hours-list">
+                        <li><span class="day">Mon – Thu:</span> <span>7:00 AM – 11:00 PM</span></li>
+                        <li><span class="day">Fri – Sat:</span> <span>7:00 AM – 12:00 AM</span></li>
+                        <li><span class="day">Sunday:</span> <span>6:30 AM – 11:30 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Tag Us</h4>
+                    <p style="font-size: 0.9rem; margin-bottom: 1rem;">Share your sunset coffee moments with <strong>#ManasaCafeBeach</strong> to get featured on our board.</p>
+                    <a href="reservation.html" class="btn btn-outline-gold btn-sm"><i class="fa-solid fa-calendar-check"></i> Book Your Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 MANASA CAFE. All Rights Reserved.</p>
+                <p>Designed for Luxury Coastal Hospitality • BTech CSE Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>

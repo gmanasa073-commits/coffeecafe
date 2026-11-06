@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANASA CAFE | Luxury Beachside Coffee & Dining</title>
+    <meta name="description" content="Welcome to MANASA CAFE - An open-air luxury beachside cafe offering artisan single-origin coffees, coastal dining, handmade pastries, and sunset views.">
+    <!-- Favicon -->
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/924/924514.png" type="image/png">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="top-bar-item"><span class="status-dot"></span> Open Today: 7:00 AM – 11:00 PM</span>
+                <span class="top-bar-item"><i class="fa-solid fa-location-dot"></i> Sunset Promenade Beach Road</span>
+                <span class="top-bar-item"><i class="fa-solid fa-guitar"></i> Sunset Acoustic Live: Daily at 6:00 PM</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-bar-item"><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">MANASA CAFE</span>
+                        <span class="logo-tag">Beachside Roastery</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links -->
+                <ul class="nav-links" id="navLinks">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="takeaway.html" class="nav-link">Take Away</a></li>
+                    <li class="nav-item"><a href="reservation.html" class="nav-link">Reservations</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- Action Controls -->
+                <div class="nav-actions">
+                    <a href="takeaway.html" class="cart-icon-btn" title="View Take Away Cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-count-badge" id="navCartCount">0</span>
+                    </a>
+                    <a href="reservation.html" class="btn btn-primary btn-sm">Book Table</a>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Full-Screen Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-welcome-badge">
+                    <i class="fa-solid fa-water"></i> Welcome to Coastal Serenity
+                </div>
+                <h1 class="hero-title text-gradient-gold">MANASA CAFE</h1>
+                <span class="hero-tagline">"Brewed with Love by the Beach"</span>
+                <p class="hero-description">
+                    Where single-origin artisan brews meet the soothing melody of ocean waves, golden sunset horizons, and hand-crafted culinary delights.
+                </p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-book-open"></i> View Menu
+                    </a>
+                    <a href="reservation.html" class="btn btn-outline-gold btn-lg">
+                        <i class="fa-solid fa-calendar-check"></i> Book a Table
+                    </a>
+                    <a href="takeaway.html" class="btn btn-outline-light btn-lg">
+                        <i class="fa-solid fa-bag-shopping"></i> Order Take Away
+                    </a>
+                </div>
+
+                <!-- Highlight Row -->
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span>100% Single-Origin Arabica</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                        <span>Open-Air Ocean Seating</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-cake-candles"></i>
+                        <span>Artisan Bakery & Pastries</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-star"></i>
+                        <span>4.9★ Rated Coastal Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section-padding" style="background: #140B07;">
+        <div class="container">
+            <div class="about-preview-grid">
+                <div class="about-images-stacked">
+                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=900&auto=format&fit=crop" alt="Manasa Cafe Ambiance" class="about-img-main">
+                    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=600&auto=format&fit=crop" alt="Coffee Pouring" class="about-img-sub">
+                    <div class="about-experience-badge">
+                        <span class="years">7+</span>
+                        <span class="text">Years of Coffee Passion</span>
+                    </div>
+                </div>
+
+                <div class="about-content-text">
+                    <span class="section-subtitle">Our Coastal Story</span>
+                    <h2 class="section-title">A Haven Where Sea Breeze Meets Fine Coffee</h2>
+                    <p>
+                        Founded on the sun-kissed coastlines, <strong>MANASA CAFE</strong> was conceived as a sanctuary for those who seek tranquility, authentic artisan coffees, and heartwarming culinary experiences right beside the lapping ocean waves.
+                    </p>
+                    <p>
+                        Every morning, our master baristas carefully roast handpicked Arabica beans while the sea breeze sets the mood. Whether you're catching the sunrise with an espresso or relaxing under golden sunset fairy lights, our cafe is your home by the beach.
+                    </p>
+
+                    <div class="about-features-list">
+                        <div class="feature-box">
+                            <div class="feature-icon"><i class="fa-solid fa-fire-burner"></i></div>
+                            <div>
+                                <h4>In-House Roastery</h4>
+                                <p>Small batch roasted daily for unmatched flavor clarity.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-icon"><i class="fa-solid fa-sun"></i></div>
+                            <div>
+                                <h4>Sunset View Deck</h4>
+                                <p>Unobstructed coastal panorama with cozy wooden cabanas.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-icon"><i class="fa-solid fa-cookie-bite"></i></div>
+                            <div>
+                                <h4>Handcrafted Bakery</h4>
+                                <p>Freshly baked croissants, tarts, and Belgian waffles.</p>
+                            </div>
+                        </div>
+                        <div class="feature-box">
+                            <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
+                            <div>
+                                <h4>Made with Love</h4>
+                                <p>Sustainably sourced, organic, and ethically crafted.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 1.5rem;">
+                        <a href="about.html" class="btn btn-outline-gold">Learn More About Us <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular & Signature Items Showcase -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Signature Blends & Bites</span>
+                <h2 class="section-title">Popular at Manasa Cafe</h2>
+                <p class="section-desc">Handcrafted with passion, our bestsellers represent the finest culinary craftsmanship by the sea.</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Item 1: Coastal Golden Caramel Latte -->
+                <div class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-chef menu-card-badge">Best Seller</span>
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Caramel Latte" class="menu-card-img">
+                        <span class="menu-card-price">₹280</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Coastal Golden Caramel Latte</h3>
+                        </div>
+                        <p class="menu-card-desc">Double shot espresso, steamed velvet milk, sea-salt infused Madagascar caramel, and edible gold flakes.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-mug-hot"></i> Coffee • Hot</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="101" data-name="Coastal Golden Caramel Latte" data-price="280" data-img="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-plus"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Sunset Cold Brew Tonic -->
+                <div class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-gold menu-card-badge">Signature</span>
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=600&auto=format&fit=crop" alt="Cold Brew Tonic" class="menu-card-img">
+                        <span class="menu-card-price">₹260</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Sunset Cold Brew Tonic</h3>
+                        </div>
+                        <p class="menu-card-desc">18-hour slow steeped Ethiopian Yirgacheffe cold brew over sparkling citrus tonic water and fresh blood orange slice.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-glass-water"></i> Cold Drink • Vegan</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="102" data-name="Sunset Cold Brew Tonic" data-price="260" data-img="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-plus"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Beachside Avocado Sourdough Toast -->
+                <div class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-vegan menu-card-badge">Chef's Choice</span>
+                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=600&auto=format&fit=crop" alt="Avocado Toast" class="menu-card-img">
+                        <span class="menu-card-price">₹340</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Avocado Sourdough Tartine</h3>
+                        </div>
+                        <p class="menu-card-desc">Artisanal sourdough toasted with garlic butter, smashed Hass avocados, sun-dried tomatoes, micro-herbs, and feta crumble.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-bread-slice"></i> Snacks • Gourmet</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="103" data-name="Avocado Sourdough Tartine" data-price="340" data-img="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-plus"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Belgian Truffle Chocolate Torte -->
+                <div class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-gold menu-card-badge">Dessert</span>
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop" alt="Chocolate Torte" class="menu-card-img">
+                        <span class="menu-card-price">₹310</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Belgian Truffle Chocolate Torte</h3>
+                        </div>
+                        <p class="menu-card-desc">70% dark Belgian cocoa ganache on an almond crust, garnished with berry compote and gold leaf.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-cake-candles"></i> Dessert • Decadent</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="104" data-name="Belgian Truffle Chocolate Torte" data-price="310" data-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-plus"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Smoked Paprika Chicken Panini -->
+                <div class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-chef menu-card-badge">Popular</span>
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=600&auto=format&fit=crop" alt="Chicken Panini" class="menu-card-img">
+                        <span class="menu-card-price">₹360</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Smoked Paprika Chicken Panini</h3>
+                        </div>
+                        <p class="menu-card-desc">Grilled herb chicken breast, melted aged cheddar, caramelized onions, and house chimichurri inside crusty ciabatta.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-burger"></i> Sandwich • Savory</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="105" data-name="Smoked Paprika Chicken Panini" data-price="360" data-img="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-plus"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Royal Saffron & Rose Cardamom Chai -->
+                <div class="menu-card">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-gold menu-card-badge">Artisan Tea</span>
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=600&auto=format&fit=crop" alt="Saffron Chai" class="menu-card-img">
+                        <span class="menu-card-price">₹220</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Royal Saffron & Rose Cardamom Chai</h3>
+                        </div>
+                        <p class="menu-card-desc">Brewed with whole spices, Kashmiri saffron strands, organic Assam black tea, and pure condensed cream.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-leaf"></i> Tea • Hot Specialty</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="106" data-name="Royal Saffron Rose Chai" data-price="220" data-img="https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-plus"></i> Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3.5rem;">
+                <a href="menu.html" class="btn btn-outline-gold btn-lg">Explore Full Menu with 30+ Items <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Gallery Teaser -->
+    <section class="section-padding" style="background: #120A06;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Moments by the Shore</span>
+                <h2 class="section-title">The Beachside Experience</h2>
+                <p class="section-desc">Glimpses of fairy-lit evenings, ocean tides, cozy corners, and handcrafted brews.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200', 'Sunset Waves & Open-Air Cafe Deck')">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600&auto=format&fit=crop" alt="Beach Sunset">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Sunset Waves</h4>
+                        <p>Beachside Outdoor Deck</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200', 'Artisanal Swan Latte Art')">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600&auto=format&fit=crop" alt="Latte Art">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Master Barista Craft</h4>
+                        <p>Specialty Latte Art</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=1200', 'Fairy Lights Evening Seating')">
+                    <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=600&auto=format&fit=crop" alt="Fairy Lights Ambiance">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Fairy Lit Evenings</h4>
+                        <p>Cozy Coastal Cabanas</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=1200', 'Gourmet Artisanal Desserts')">
+                    <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?q=80&w=600&auto=format&fit=crop" alt="Dessert Showcase">
+                    <div class="gallery-overlay">
+                        <div class="gallery-overlay-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                        <h4>Sweet Temptations</h4>
+                        <p>Daily Patisserie Creations</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="gallery.html" class="btn btn-outline-gold">View Full Visual Gallery <i class="fa-solid fa-camera"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Preview -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Guest Love & Stories</span>
+                <h2 class="section-title">What Our Patrons Say</h2>
+                <p class="section-desc">Discover why coffee lovers and travelers adore their time at MANASA CAFE.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-profile">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop" alt="Ananya Roy" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Ananya Roy</h4>
+                                <span class="reviewer-tag"><i class="fa-solid fa-circle-check"></i> Verified Guest</span>
+                            </div>
+                        </div>
+                        <div class="stars-row">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">
+                        "The golden sunset over the Arabian sea paired with their Coastal Caramel Latte is pure magic! The wooden cabanas and ocean breeze make this my favorite spot in the entire city."
+                    </p>
+                    <div class="review-footer">
+                        <span>Visited: Sunset Dinner</span>
+                        <span>Favorite: Caramel Latte</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-profile">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=150&auto=format&fit=crop" alt="Rohan Verma" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Rohan Verma</h4>
+                                <span class="reviewer-tag"><i class="fa-solid fa-circle-check"></i> Verified Guest</span>
+                            </div>
+                        </div>
+                        <div class="stars-row">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">
+                        "Unbelievable coffee quality. As a specialty coffee nerd, their Ethiopian pour-over and sourdough sandwiches blew me away. The staff treats you like royalty."
+                    </p>
+                    <div class="review-footer">
+                        <span>Visited: Weekend Brunch</span>
+                        <span>Favorite: Pour Over Coffee</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-profile">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=150&auto=format&fit=crop" alt="Priya & Karthik" class="reviewer-avatar">
+                            <div>
+                                <h4 class="reviewer-name">Priya & Karthik</h4>
+                                <span class="reviewer-tag"><i class="fa-solid fa-circle-check"></i> Verified Guest</span>
+                            </div>
+                        </div>
+                        <div class="stars-row">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="review-body">
+                        "Celebrated our anniversary at the Sunset Deck. The fairy lights, live acoustic music, and decadent chocolate torte made it an unforgettable romantic evening!"
+                    </p>
+                    <div class="review-footer">
+                        <span>Visited: Anniversary Night</span>
+                        <span>Favorite: Chocolate Torte</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="reviews.html" class="btn btn-outline-gold">Read All Reviews & Share Your Experience <i class="fa-solid fa-pen-nib"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Reservation CTA Banner -->
+    <section class="section-padding" style="background: linear-gradient(rgba(26,15,10,0.85), rgba(26,15,10,0.85)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600') center/cover fixed;">
+        <div class="container text-center" style="text-align: center;">
+            <span class="section-subtitle">Secure Your Spot by the Sea</span>
+            <h2 style="font-size: 2.8rem; margin-bottom: 1.2rem;" class="text-gradient-gold">Experience Sunset Dining at MANASA CAFE</h2>
+            <p style="max-width: 650px; margin: 0 auto 2.5rem; font-size: 1.15rem; color: var(--color-beige);">
+                Book your preferred beachside table in advance to catch the golden sunset, acoustic melodies, and chef-curated delicacies.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap;">
+                <a href="reservation.html" class="btn btn-primary btn-lg"><i class="fa-solid fa-calendar-check"></i> Reserve a Table Now</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg"><i class="fa-solid fa-compass"></i> Get Directions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Info -->
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                        <div class="logo-text">
+                            <span class="logo-title">MANASA CAFE</span>
+                            <span class="logo-tag">Beachside Roastery</span>
+                        </div>
+                    </a>
+                    <p>
+                        A premier open-air coastal cafe celebrating single-origin coffees, handcrafted confectionery, and peaceful sunset ocean vistas.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="social-icon-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="social-icon-btn" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://tripadvisor.com" target="_blank" class="social-icon-btn" title="TripAdvisor"><i class="fa-solid fa-plane"></i></a>
+                        <a href="https://pinterest.com" target="_blank" class="social-icon-btn" title="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> Our Story</a></li>
+                        <li><a href="menu.html"><i class="fa-solid fa-angle-right"></i> Gourmet Menu</a></li>
+                        <li><a href="gallery.html"><i class="fa-solid fa-angle-right"></i> Photo Gallery</a></li>
+                        <li><a href="takeaway.html"><i class="fa-solid fa-angle-right"></i> Online Take Away</a></li>
+                    </ul>
+                </div>
+
+                <!-- Operating Hours -->
+                <div class="footer-col">
+                    <h4>Cafe Hours</h4>
+                    <ul class="footer-hours-list">
+                        <li><span class="day">Mon – Thu:</span> <span>7:00 AM – 11:00 PM</span></li>
+                        <li><span class="day">Fri – Sat:</span> <span>7:00 AM – 12:00 AM</span></li>
+                        <li><span class="day">Sunday:</span> <span>6:30 AM – 11:30 PM</span></li>
+                        <li><span class="day">Sunset Live:</span> <span>6:00 PM – 8:30 PM</span></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter & Contact -->
+                <div class="footer-col">
+                    <h4>Sunset Club</h4>
+                    <p style="font-size: 0.88rem; margin-bottom: 0.8rem;">Subscribe for secret seasonal roasts and 15% off your next reservation.</p>
+                    <form class="footer-newsletter-form" id="newsletterForm" onsubmit="handleNewsletterSubmit(event)">
+                        <input type="email" placeholder="Enter your email" required class="footer-newsletter-input" id="newsletterEmail">
+                        <button type="submit" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                    <div style="margin-top: 1.5rem; font-size: 0.88rem;">
+                        <p><i class="fa-solid fa-phone text-gold"></i> +91 98765 43210</p>
+                        <p><i class="fa-solid fa-envelope text-gold"></i> hello@manasacafe.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 MANASA CAFE. All Rights Reserved. Brewed with love beside the ocean.</p>
+                <p>Designed for Luxury Coastal Hospitality • BTech CSE Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal for Gallery Images -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-container">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <img src="" alt="Enlarged Cafe View" class="lightbox-img" id="lightboxImg">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notifications Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Common JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

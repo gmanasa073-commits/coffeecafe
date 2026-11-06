@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Menu | MANASA CAFE - Coastal Coffees & Bites</title>
+    <meta name="description" content="Explore our gourmet coastal menu at MANASA CAFE. Single-origin coffees, specialty teas, decadent desserts, and artisan sandwiches.">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/924/924514.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="top-bar-item"><span class="status-dot"></span> Open Today: 7:00 AM – 11:00 PM</span>
+                <span class="top-bar-item"><i class="fa-solid fa-location-dot"></i> Sunset Promenade Beach Road</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-bar-item"><i class="fa-solid fa-phone"></i> +91 98765 43210</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="main-header" id="mainHeader">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                    <div class="logo-text">
+                        <span class="logo-title">MANASA CAFE</span>
+                        <span class="logo-tag">Beachside Roastery</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="menu.html" class="nav-link active">Menu</a></li>
+                    <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li class="nav-item"><a href="takeaway.html" class="nav-link">Take Away</a></li>
+                    <li class="nav-item"><a href="reservation.html" class="nav-link">Reservations</a></li>
+                    <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <a href="takeaway.html" class="cart-icon-btn" title="View Take Away Cart">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span class="cart-count-badge" id="navCartCount">0</span>
+                    </a>
+                    <a href="reservation.html" class="btn btn-primary btn-sm">Book Table</a>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header Hero -->
+    <section class="page-hero" style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1920');">
+        <div class="page-hero-overlay"></div>
+        <div class="page-hero-content">
+            <span class="page-hero-subtitle">Handcrafted with Passion</span>
+            <h1 class="page-hero-title">Our Gourmet Menu</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+                <span>Menu</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section class="section-padding">
+        <div class="container">
+            <!-- Search & Filter Controls -->
+            <div class="menu-search-box">
+                <i class="fa-solid fa-magnifying-glass menu-search-icon"></i>
+                <input type="text" id="menuSearchInput" class="menu-search-input" placeholder="Search coffee, desserts, sandwiches...">
+            </div>
+
+            <div class="menu-filter-bar">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="coffee"><i class="fa-solid fa-mug-hot"></i> Coffee</button>
+                <button class="filter-btn" data-category="tea"><i class="fa-solid fa-leaf"></i> Tea</button>
+                <button class="filter-btn" data-category="desserts"><i class="fa-solid fa-cake-candles"></i> Desserts</button>
+                <button class="filter-btn" data-category="snacks"><i class="fa-solid fa-burger"></i> Snacks & Sandwiches</button>
+                <button class="filter-btn" data-category="cold-drinks"><i class="fa-solid fa-glass-water"></i> Cold Drinks & Specials</button>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="menu-grid" id="menuGridContainer">
+
+                <!-- 1. Coffee -->
+                <div class="menu-card" data-cat="coffee" data-title="Coastal Golden Caramel Latte">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-chef menu-card-badge">Best Seller</span>
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop" alt="Caramel Latte" class="menu-card-img">
+                        <span class="menu-card-price">₹280</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Coastal Golden Caramel Latte</h3></div>
+                        <p class="menu-card-desc">Double shot espresso, steamed velvet milk, sea-salt infused Madagascar caramel, and edible gold flakes.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-mug-hot"></i> Hot • Specialty</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="101" data-name="Coastal Golden Caramel Latte" data-price="280" data-img="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. Coffee -->
+                <div class="menu-card" data-cat="coffee" data-title="Classic Spanish Cortado">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-gold menu-card-badge">Single Origin</span>
+                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=600&auto=format&fit=crop" alt="Cortado" class="menu-card-img">
+                        <span class="menu-card-price">₹210</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Classic Spanish Cortado</h3></div>
+                        <p class="menu-card-desc">Equal parts rich espresso and warm textured milk, cutting acidity for a creamy, balanced intensity.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-mug-hot"></i> Hot • Espresso</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="107" data-name="Classic Spanish Cortado" data-price="210" data-img="https://images.unsplash.com/photo-1534778101976-62847782c213?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Coffee -->
+                <div class="menu-card" data-cat="coffee" data-title="Manasa Signature Cappuccino">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-gold menu-card-badge">Popular</span>
+                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=600&auto=format&fit=crop" alt="Cappuccino" class="menu-card-img">
+                        <span class="menu-card-price">₹230</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Manasa Signature Cappuccino</h3></div>
+                        <p class="menu-card-desc">Chikmagalur Arabica blend topped with silky dense microfoam and dusted with organic cinnamon cocoa.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-mug-hot"></i> Hot • Classic</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="108" data-name="Manasa Signature Cappuccino" data-price="230" data-img="https://images.unsplash.com/photo-1572442388796-11668a67e53d?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Tea -->
+                <div class="menu-card" data-cat="tea" data-title="Royal Saffron & Rose Cardamom Chai">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-chef menu-card-badge">Chef's Special</span>
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=600&auto=format&fit=crop" alt="Saffron Chai" class="menu-card-img">
+                        <span class="menu-card-price">₹220</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Royal Saffron & Rose Chai</h3></div>
+                        <p class="menu-card-desc">Whole crushed green cardamom, Kashmiri saffron strands, organic Assam black tea, simmered in condensed milk.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-leaf"></i> Hot Tea • Traditional</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="106" data-name="Royal Saffron Rose Chai" data-price="220" data-img="https://images.unsplash.com/photo-1576092768241-dec231879fc3?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Tea -->
+                <div class="menu-card" data-cat="tea" data-title="Japanese Ceremonial Matcha Latte">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-vegan menu-card-badge">Organic</span>
+                        <img src="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?q=80&w=600&auto=format&fit=crop" alt="Matcha Latte" class="menu-card-img">
+                        <span class="menu-card-price">₹270</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Ceremonial Matcha Latte</h3></div>
+                        <p class="menu-card-desc">First-harvest stone ground Uji matcha whisked with warm oat milk and sweetened with subtle vanilla agave.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-leaf"></i> Vegan • Antioxidant</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="109" data-name="Ceremonial Matcha Latte" data-price="270" data-img="https://images.unsplash.com/photo-1536256263959-770b48d82b0a?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Desserts -->
+                <div class="menu-card" data-cat="desserts" data-title="Belgian Truffle Chocolate Torte">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-gold menu-card-badge">Gourmet</span>
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop" alt="Chocolate Torte" class="menu-card-img">
+                        <span class="menu-card-price">₹310</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Belgian Truffle Chocolate Torte</h3></div>
+                        <p class="menu-card-desc">Rich 70% dark Belgian chocolate ganache on a crunchy almond crust with raspberry reduction and gold leaf.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-cake-candles"></i> Dessert • Decadent</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="104" data-name="Belgian Truffle Chocolate Torte" data-price="310" data-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Desserts -->
+                <div class="menu-card" data-cat="desserts" data-title="Warm Salted Caramel Tiramisu">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-chef menu-card-badge">Must Try</span>
+                        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=600&auto=format&fit=crop" alt="Tiramisu" class="menu-card-img">
+                        <span class="menu-card-price">₹320</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Coastal Espresso Tiramisu</h3></div>
+                        <p class="menu-card-desc">Savoiardi ladyfingers soaked in our dark roast espresso and spiced liqueur, layered with mascarpone cream.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-cake-candles"></i> Dessert • Italian</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="110" data-name="Coastal Espresso Tiramisu" data-price="320" data-img="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Desserts -->
+                <div class="menu-card" data-cat="desserts" data-title="French Butter Pistachio Croissant">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-gold menu-card-badge">Fresh Bakery</span>
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" alt="Pistachio Croissant" class="menu-card-img">
+                        <span class="menu-card-price">₹240</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Pistachio Cream Croissant</h3></div>
+                        <p class="menu-card-desc">Flaky laminated French butter pastry filled with Sicilian pistachio frangipane and crushed pistachios.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-cookie-bite"></i> Bakery • Flaky</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="111" data-name="Pistachio Cream Croissant" data-price="240" data-img="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Snacks & Sandwiches -->
+                <div class="menu-card" data-cat="snacks" data-title="Smoked Paprika Chicken Panini">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-chef menu-card-badge">Chef's Special</span>
+                        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=600&auto=format&fit=crop" alt="Chicken Panini" class="menu-card-img">
+                        <span class="menu-card-price">₹360</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Smoked Paprika Chicken Panini</h3></div>
+                        <p class="menu-card-desc">Grilled herb chicken breast, melted aged cheddar, caramelized onions, and house chimichurri inside crusty ciabatta.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-burger"></i> Sandwich • Savory</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="105" data-name="Smoked Paprika Chicken Panini" data-price="360" data-img="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Snacks & Sandwiches -->
+                <div class="menu-card" data-cat="snacks" data-title="Avocado Sourdough Tartine">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-vegan menu-card-badge">Vegetarian</span>
+                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=600&auto=format&fit=crop" alt="Avocado Toast" class="menu-card-img">
+                        <span class="menu-card-price">₹340</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Avocado Sourdough Tartine</h3></div>
+                        <p class="menu-card-desc">Artisanal sourdough toasted with garlic butter, smashed Hass avocados, sun-dried tomatoes, micro-herbs, and feta crumble.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-bread-slice"></i> Snacks • Gourmet</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="103" data-name="Avocado Sourdough Tartine" data-price="340" data-img="https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Cold Drinks & Specials -->
+                <div class="menu-card" data-cat="cold-drinks" data-title="Sunset Cold Brew Tonic">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-gold menu-card-badge">Signature</span>
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=600&auto=format&fit=crop" alt="Cold Brew Tonic" class="menu-card-img">
+                        <span class="menu-card-price">₹260</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Sunset Cold Brew Tonic</h3></div>
+                        <p class="menu-card-desc">18-hour slow steeped Ethiopian Yirgacheffe cold brew over sparkling citrus tonic water and fresh blood orange slice.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-glass-water"></i> Cold Drink • Vegan</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="102" data-name="Sunset Cold Brew Tonic" data-price="260" data-img="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Cold Drinks & Specials -->
+                <div class="menu-card" data-cat="cold-drinks" data-title="Tropical Passionfruit Coastal Cooler">
+                    <div class="menu-card-img-wrapper">
+                        <span class="badge badge-vegan menu-card-badge">Refreshing</span>
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=600&auto=format&fit=crop" alt="Passionfruit Cooler" class="menu-card-img">
+                        <span class="menu-card-price">₹230</span>
+                    </div>
+                    <div class="menu-card-body">
+                        <div class="menu-card-header"><h3 class="menu-card-title">Tropical Passionfruit Cooler</h3></div>
+                        <p class="menu-card-desc">Crushed wild passionfruit, fresh garden mint, lime spritz, coconut nectar, and sparkling Himalayan mineral water.</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-tags"><i class="fa-solid fa-cocktail"></i> Mocktail • Iced</span>
+                            <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="112" data-name="Tropical Passionfruit Cooler" data-price="230" data-img="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=600&auto=format&fit=crop">
+                                <i class="fa-solid fa-bag-shopping"></i> Take Away
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                        <div class="logo-text">
+                            <span class="logo-title">MANASA CAFE</span>
+                            <span class="logo-tag">Beachside Roastery</span>
+                        </div>
+                    </a>
+                    <p>A premier open-air coastal cafe celebrating single-origin coffees, handcrafted confectionery, and peaceful sunset ocean vistas.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://tripadvisor.com" target="_blank" class="social-icon-btn"><i class="fa-solid fa-plane"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fa-solid fa-angle-right"></i> Our Story</a></li>
+                        <li><a href="menu.html"><i class="fa-solid fa-angle-right"></i> Gourmet Menu</a></li>
+                        <li><a href="takeaway.html"><i class="fa-solid fa-angle-right"></i> Online Take Away</a></li>
+                        <li><a href="reservation.html"><i class="fa-solid fa-angle-right"></i> Book a Table</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Cafe Hours</h4>
+                    <ul class="footer-hours-list">
+                        <li><span class="day">Mon – Thu:</span> <span>7:00 AM – 11:00 PM</span></li>
+                        <li><span class="day">Fri – Sat:</span> <span>7:00 AM – 12:00 AM</span></li>
+                        <li><span class="day">Sunday:</span> <span>6:30 AM – 11:30 PM</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Take Away Help</h4>
+                    <p style="font-size: 0.88rem; margin-bottom: 1rem;">Ready for immediate pickup or carside delivery at the promenade.</p>
+                    <a href="takeaway.html" class="btn btn-outline-gold btn-sm"><i class="fa-solid fa-bag-shopping"></i> Go to Checkout</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 MANASA CAFE. All Rights Reserved.</p>
+                <p>Designed for Luxury Coastal Hospitality • BTech CSE Project</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <div class="toast-container" id="toastContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
